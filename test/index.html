@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <p>This is a test form GET. It will send 2 hidden fields and email field.</p>
+  <form action="/" method="GET">
+    <input type="hidden" name="hidden-1" value="hidden-1-value" />
+    <input type="hidden" name="hidden-2" value="hidden-2-value" />
+
+    <input type="email" name="email" placeholder="email" />
+    
+    <input type="submit" value="SEND" />
+  </form>
+  <p>This is a test form POST. It will send 2 hidden fields and email field.</p>
+  <form action="/" method="POST">
+    <input type="hidden" name="hidden-1" value="hidden-1-value" />
+    <input type="hidden" name="hidden-2" value="hidden-2-value" />
+
+    <input type="email" name="email" placeholder="email" />
+    
+    <input type="submit" value="SEND" />
+  </form>
+</body>
+</html>
