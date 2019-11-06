@@ -6,7 +6,7 @@ const tableify = require('tableify')
 const app = express()
 
 app.use(express.urlencoded())
-app.use('/test', express.static('test'))
+app.use('/test', express.static(__dirname + '/test'))
 
 
 app.get('/', (req, res) => res.send(`<h4>Method: ${req.method}</h4>` + tableify(req.query)))
